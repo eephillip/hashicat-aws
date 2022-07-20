@@ -4,7 +4,7 @@ module "s3_bucket" {
   bucket = "my-s3-bucket"
   acl    = "private"
 
-  bucket_prefix = "${prefix}"
+  bucket_prefix = "${var.prefix}"
 
   versioning = {
     enabled = true
